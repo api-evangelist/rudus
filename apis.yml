@@ -1,22 +1,62 @@
 aid: rudus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rudus.png
 name: Rudus
-description: Rudus is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rudus is a Y Combinator (Spring 2026) startup building an AI-powered takeoff and
+  estimation platform for concrete contractors and subcontractors. The software
+  automatically detects and classifies concrete structures (footings, walls, columns,
+  and slabs) from architectural plan sets, expands them into detailed assembly line
+  items, and integrates into existing estimator workflows rather than replacing them.
+  Rudus reports a 70-80% reduction in takeoff and estimation time, letting estimators
+  submit more bids. Founded by Rishi Pankhaniya (ex-Airbnb) and Sahil Goel (ex-Amazon).
+  As of this enrichment pass Rudus operates a lead-generation marketing site at
+  rudus.ai with no public developer program, API, documentation, or self-service
+  sign-up; this profile records that verified state.
 url: https://raw.githubusercontent.com/api-evangelist/rudus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
+x-website: https://rudus.ai/
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Construction Technology
+- Artificial Intelligence
+- Computer Vision
+- Estimation
+- Takeoff
+- Concrete
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/rudus-domain-security.yml
+- url: https://rudus.ai/
+  type: Website
+  name: Rudus Website
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
